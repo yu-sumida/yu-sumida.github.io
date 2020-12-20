@@ -1,0 +1,79 @@
+body {
+  margin: 0px;
+  
+}
+header{
+  background-color: orange;
+  text-align: center;
+  padding-top: 64px;
+}
+header h1{
+  margin: 0px;
+  padding-top: 20px;
+}
+header p{
+  margin: 0px;
+}
+header img{
+  width: 200px;
+  vertical-align: bottom;
+}
+.btn {
+  text-decoration: none;
+  display: block;
+  background-color:snow;
+  color: orange;
+  width: 140px;
+  line-height:normal;
+  margin: 40px auto 48px;
+  font-size: 14px;
+  border-radius: 4px;
+  
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.feat img{
+  width: 100%;
+}
+.feat > h1 {
+  text-align: center;
+  padding: 64px 0;
+
+}
+.feat .cont{
+  margin: 0 32px;
+}
+
+.feat section{
+  padding-bottom: 64px;
+}
+@media (min-width: 900px) {
+  header .cont {
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+
+  }
+  header .info {
+
+    width: 60%;
+    align-self: center;
+  }
+  header .pic {
+    width: 40%;
+  }
+  .feat section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .feat section:nth-child(even){
+    flex-direction: row-reverse;
+  }
+  .feat .pic{
+    width: 50%;
+  }
+  .feat .info{
+    width: calc(50% - 32px);
+  }
+}
